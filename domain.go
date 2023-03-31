@@ -13,5 +13,6 @@ type domain struct {
 	// nolint: lll
 	Chuangcache *chuangcache `json:"chuangcache" yaml:"chuangcache" xml:"chuangcache" toml:"chuangcache"  validate:"required_without_all=Tencent"`
 	// 腾讯云
+	// nolint: lll
 	Tencent *tencent `json:"tencent" yaml:"tencent" xml:"tencent" toml:"tencent"  validate:"required_without_all=Chuangcache"`
 }
