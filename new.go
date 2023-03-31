@@ -47,7 +47,3 @@ func newCDN(config *pangu.Config) (cd *CDN, err error) {
 
 	return
 }
-
-func forChuangecache(chuangcache *chuangcache) {
-
-}
