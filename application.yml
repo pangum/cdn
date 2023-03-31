@@ -1,0 +1,35 @@
+cdn:
+  domain:
+    name: cdn.test
+    scheme: https
+    chuangcache:
+      a: xxx
+    tencent:
+      a: xxx
+      b: xxx
+      c: xxx
+      d:
+        key: xxx
+        sign: xxx
+        timestamp: xxx
+    match: minio.test
+    matches:
+      - a.test
+      - b.test
+  domains:
+    - name: cdn.test
+      scheme: https
+      chuangcache:
+        a: xxx
+      tencent:
+        a: xxx
+        b: xxx
+        c: xxx
+        d:
+          key: xxx
+          sign: xxx
+          timestamp: xxx
+      match: minio.test
+      matches:
+        - a.test
+        - b.test
