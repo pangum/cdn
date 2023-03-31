@@ -3,7 +3,7 @@ module github.com/pangum/cdn
 go 1.19
 
 require (
-	github.com/goexl/cdn v0.0.2
+	github.com/goexl/cdn v0.0.3
 	github.com/pangum/pangu v0.3.1
 )
 
@@ -41,5 +41,3 @@ require (
 	golang.org/x/text v0.8.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/goexl/cdn => ../../goexl/cdn
