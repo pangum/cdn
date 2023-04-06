@@ -23,8 +23,8 @@ func newCDN(config *pangu.Config) (cd *CDN, err error) {
 		if nil != _domain.Chuangcache {
 			_chuangecache := builder.Chuangcache().Host(_domain.Host).Scheme(_domain.Scheme).Pattern(_domain.Patterns...)
 			signer := _chuangecache.Signer()
-			if "" != _domain.Chuangcache.A {
-				signer.A(_domain.Chuangcache.A)
+			if "" != _domain.Chuangcache.C {
+				signer.A(_domain.Chuangcache.C)
 			}
 			signer.Build()
 			_chuangecache.Build()
@@ -44,6 +44,7 @@ func newCDN(config *pangu.Config) (cd *CDN, err error) {
 			_tencent.Build()
 		}
 	}
+	cd = builder.Build()
 
 	return
 }

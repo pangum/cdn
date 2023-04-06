@@ -2,7 +2,7 @@ package cdn
 
 type domain struct {
 	// 主机
-	Host string `json:"host" yaml:"host" xml:"host" toml:"host"`
+	Host string `json:"host" yaml:"host" xml:"host" toml:"host" validate:"required,hostname|hostname_port"`
 	// 模式
 	Scheme string `default:"https" json:"scheme" yaml:"scheme" xml:"scheme" toml:"scheme" validate:"oneof=http https"`
 	// 匹配

@@ -1,5 +1,5 @@
 package cdn
 
 type chuangcache struct {
-	A string `json:"a" yaml:"a" xml:"a" toml:"a" validate:"required"`
+	C string `json:"c" yaml:"c" xml:"c" toml:"c" validate:"required,min=6,max=40"`
 }
