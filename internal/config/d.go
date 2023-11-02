@@ -1,6 +1,6 @@
-package cdn
+package config
 
-type d struct {
+type D struct {
 	// 密钥
 	Key string `json:"key" yaml:"key" xml:"key" toml:"key" validate:"required"`
 	// 签名字段

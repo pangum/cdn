@@ -1,6 +1,6 @@
-package cdn
+package config
 
-type domain struct {
+type Domain struct {
 	// 主机
 	Host string `json:"host" yaml:"host" xml:"host" toml:"host" validate:"required,hostname|hostname_port"`
 	// 模式
@@ -11,8 +11,8 @@ type domain struct {
 	Patterns []string `json:"patterns" yaml:"patterns" xml:"patterns" toml:"patterns"`
 	// 创世云
 	// nolint: lll
-	Chuangcache *chuangcache `json:"chuangcache" yaml:"chuangcache" xml:"chuangcache" toml:"chuangcache"  validate:"required_without_all=Tencent"`
+	Chuangcache *Chuangcache `json:"chuangcache" yaml:"chuangcache" xml:"chuangcache" toml:"chuangcache"  validate:"required_without_all=Tencent"`
 	// 腾讯云
 	// nolint: lll
-	Tencent *tencent `json:"tencent" yaml:"tencent" xml:"tencent" toml:"tencent"  validate:"required_without_all=Chuangcache"`
+	Tencent *Tencent `json:"Tencent" yaml:"Tencent" xml:"Tencent" toml:"Tencent"  validate:"required_without_all=Chuangcache"`
 }
