@@ -1,5 +1,5 @@
 package config
 
 type Chuangcache struct {
-	C string `json:"c" yaml:"c" xml:"c" toml:"c" validate:"required,min=6,max=40"`
+	A string `json:"a" yaml:"a" xml:"a" toml:"a" validate:"required,min=6,max=40"`
 }
