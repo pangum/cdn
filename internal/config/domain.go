@@ -14,5 +14,5 @@ type Domain struct {
 	Chuangcache *Chuangcache `json:"chuangcache" yaml:"chuangcache" xml:"chuangcache" toml:"chuangcache"  validate:"required_without_all=Tencent"`
 	// 腾讯云
 	// nolint: lll
-	Tencent *Tencent `json:"Tencent" yaml:"Tencent" xml:"Tencent" toml:"Tencent"  validate:"required_without_all=Chuangcache"`
+	Tencent *Tencent `json:"tencent" yaml:"tencent" xml:"tencent" toml:"tencent"  validate:"required_without_all=Chuangcache"`
 }

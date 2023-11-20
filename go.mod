@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/goexl/cdn v0.0.5
-	github.com/pangum/pangu v0.4.1
+	github.com/pangum/pangu v0.4.4
 )
 
 require (
