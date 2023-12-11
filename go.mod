@@ -3,7 +3,7 @@ module github.com/pangum/cdn
 go 1.21
 
 require (
-	github.com/goexl/cdn v0.0.6
+	github.com/goexl/cdn v0.0.8
 	github.com/pangum/pangu v0.4.4
 )
 

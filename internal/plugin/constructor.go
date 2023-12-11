@@ -31,7 +31,7 @@ func (c *Constructor) new(config *Config) (client *cdn.Client, err error) {
 		}
 		_domain := builder.Domain().Host(domain.Host).Scheme(domain.Scheme).Pattern(domain.Patterns...)
 		if nil != domain.Chuangcache {
-			_domain = _domain.Chuangcache().A(domain.Chuangcache.A).Build()
+			_domain = _domain.Chuangcache().C(domain.Chuangcache.C).Build()
 		} else if nil != domain.Tencent {
 			signer := _domain.Tencent()
 			if "" != domain.Tencent.A {
